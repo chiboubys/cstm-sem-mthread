@@ -1,0 +1,171 @@
+$(DEPS	Makefile	/^$(DEPS): dep\/%.d : %.c $/
+$(OBJS	Makefile	/^$(OBJS):obj\/%.o : dep\/%.d$/
+ARCH	Makefile	/^ARCH=$(shell uname -p)$/
+ARCH	Makefile	/^ARCH=$(shell uname -m)$/
+ARCH	Makefile	/^ARCH=$(shell arch)$/
+BLOCKED	mthread_internal.h	39
+CBLUE	tests.c	12
+CC	Makefile	/^CC=gcc$/
+CFLAGS	Makefile	/^CFLAGS=-Wall -D$(ARCH)_ARCH -D_REENTRANT -g -pipe /
+CGREEN	tests.c	11
+CNRM	tests.c	9
+CRED	tests.c	10
+DEPENDS	Makefile	/^DEPENDS=$(DEPS)$/
+DEPS	Makefile	/^DEPS=$(FILES:%.c=dep\/%.d)$/
+FILES	Makefile	/^FILES=$(wildcard *.c)$/
+MAKEFLAGS +	Makefile	/^MAKEFLAGS += --no-print-directory$/
+MTHREAD_DEFAULT_STACK	mthread.c	16
+MTHREAD_EXTRA	mthread_extra.h	2
+MTHREAD_LIST_INIT	mthread.c	24
+MTHREAD_LIST_INIT	mthread_internal.h	53
+MTHREAD_LOG_PART	mthread_debug.c	40
+MTHREAD_LWP	mthread.c	11
+MTHREAD_LWP	mthread.c	13
+MTHREAD_MAX_VIRUTAL_PROCESSORS	mthread.c	17
+MTHREAD_MUTEX_DEFAULT	mthread_extra.h	34
+MTHREAD_MUTEX_ERRORCHECK	mthread_extra.h	19
+MTHREAD_MUTEX_INITIALIZER	mthread.h	163
+MTHREAD_MUTEX_NORMAL	mthread_extra.h	13
+MTHREAD_MUTEX_POLICY_FAIRSHARE	mthread_extra.h	43
+MTHREAD_MUTEX_POLICY_FIRST_FIT	mthread_extra.h	42
+MTHREAD_MUTEX_RECURSIVE	mthread_extra.h	27
+Mtests	tests.c	/^int main(int argc, char** argv){$/
+NB_THREADS	tests.c	7
+OBJS	Makefile	/^OBJS=$(FILES:%.c=obj\/%.o)$/
+RUNNING	mthread_internal.h	39
+TWO_LEVEL	mthread.c	4
+TWO_LEVEL	mthread_internal.h	9
+USE_GENERIC_ASM	mthread_tst.c	39
+ZOMBIE	mthread_internal.h	39
+__MTHREAD_MTHREAD_H__	mthread.h	2
+__MTHREAD_MTHREAD_INTERNAL_H__	mthread_internal.h	2
+__mthread_ensure_list_init	mthread_mutex.c	/^void __mthread_ensure_list_init(mthread_mutex_t* _/
+__mthread_lib_init	mthread.c	/^static inline void __mthread_lib_init(){$/
+__mthread_test_and_set	mthread_tst.c	/^static inline int __mthread_test_and_set(mthread_t/
+__mthread_test_and_set	mthread_tst.c	/^static inline int __mthread_test_and_set(mthread_t/
+__mthread_test_and_set	mthread_tst.c	/^static __inline__ int __mthread_test_and_set(mthre/
+__mthread_test_and_set	mthread_tst.c	/^static inline int __mthread_test_and_set(mthread_t/
+__mthread_yield	mthread.c	/^void __mthread_yield(mthread_virtual_processor_t* /
+__not_implemented	mthread_debug.c	/^__not_implemented (const char *func, char *file, i/
+__start_routine	mthread_internal.h	/^  void *(*__start_routine) (void *);$/
+all	Makefile	/^all:lib\/libmthread.a$/
+arg	mthread_internal.h	44
+attr	mthread.h	28
+clean	Makefile	/^clean:$/
+counter	tests.c	14
+current	mthread_internal.h	31
+first	mthread_internal.h	24
+fprintf	mthread_debug.c	/^int fprintf(FILE *stream, const char *format, ...)/
+idle	mthread_internal.h	30
+inline	mthread_internal.h	18
+joined_list	mthread.c	20
+last	mthread_internal.h	25
+lib/libmthread.a	Makefile	/^lib\/libmthread.a:$(OBJS)$/
+lib_is_initialized	mthread.c	22
+list	mthread.h	26
+lock	mthread.h	25
+lock	mthread.h	48
+lock	mthread_internal.h	26
+lwp_key	mthread.c	201
+max	mthread.h	50
+mthread_attr_t	mthread.h	18
+mthread_cond_broadcast	mthread_cond.c	/^mthread_cond_broadcast (mthread_cond_t * __cond)$/
+mthread_cond_destroy	mthread_cond.c	/^mthread_cond_destroy (mthread_cond_t * __cond)$/
+mthread_cond_init	mthread_cond.c	/^mthread_cond_init (mthread_cond_t * __cond,$/
+mthread_cond_signal	mthread_cond.c	/^mthread_cond_signal (mthread_cond_t * __cond)$/
+mthread_cond_t	mthread.h	36
+mthread_cond_wait	mthread_cond.c	/^mthread_cond_wait (mthread_cond_t * __cond, mthrea/
+mthread_condattr_t	mthread.h	39
+mthread_create	mthread.c	/^mthread_create (mthread_t * __threadp,$/
+mthread_equal	mthread.c	/^mthread_equal (mthread_t __thread1, mthread_t __th/
+mthread_exit	mthread.c	/^mthread_exit (void *__retval)$/
+mthread_fprintf_lock	mthread_debug.c	26
+mthread_get_vp	mthread.c	/^mthread_virtual_processor_t* mthread_get_vp(){$/
+mthread_get_vp_rank	mthread.c	/^int mthread_get_vp_rank(){$/
+mthread_getspecific	mthread_key.c	/^mthread_getspecific (mthread_key_t __key)$/
+mthread_idle_task	mthread.c	/^static void mthread_idle_task(void* arg){$/
+mthread_init_lib	mthread.c	/^static inline void mthread_init_lib(long i){$/
+mthread_init_thread	mthread.c	/^static inline void mthread_init_thread(struct mthr/
+mthread_init_vp	mthread.c	/^static inline void mthread_init_vp(mthread_virtual/
+mthread_insert_first	mthread.c	/^void mthread_insert_first(struct mthread_s* item, /
+mthread_insert_last	mthread.c	/^void mthread_insert_last(struct mthread_s* item, m/
+mthread_join	mthread.c	/^mthread_join (mthread_t __th, void **__thread_retu/
+mthread_key_create	mthread_key.c	/^mthread_key_create (mthread_key_t * __key, void (*/
+mthread_key_delete	mthread_key.c	/^mthread_key_delete (mthread_key_t __key)$/
+mthread_key_t	mthread.h	41
+mthread_list_init	mthread.c	/^static inline void mthread_list_init(mthread_list_/
+mthread_list_s	mthread_internal.h	23
+mthread_list_t	mthread.h	12
+mthread_log	mthread_debug.c	/^int mthread_log(char* part, const char *format, ../
+mthread_log_init	mthread_debug.c	/^int mthread_log_init(){$/
+mthread_lwp_start	mthread.c	/^static void* mthread_lwp_start(void* arg){$/
+mthread_main	mthread.c	/^static void* mthread_main(void* arg){$/
+mthread_mctx_set	mthread.c	/^mthread_mctx_set (struct mthread_s * mctx,$/
+mthread_mctx_swap	mthread.c	/^mthread_mctx_swap (struct mthread_s * cur_mctx, st/
+mthread_mutex_destroy	mthread_mutex.c	/^mthread_mutex_destroy (mthread_mutex_t * __mutex)$/
+mthread_mutex_init	mthread_mutex.c	/^mthread_mutex_init (mthread_mutex_t * __mutex,$/
+mthread_mutex_lock	mthread_mutex.c	/^mthread_mutex_lock (mthread_mutex_t * __mutex)$/
+mthread_mutex_policy	mthread_extra.h	41
+mthread_mutex_policy_t	mthread_extra.h	45
+mthread_mutex_s	mthread.h	23
+mthread_mutex_t	mthread.h	30
+mthread_mutex_trylock	mthread_mutex.c	/^mthread_mutex_trylock (mthread_mutex_t * __mutex)$/
+mthread_mutex_type	mthread_extra.h	7
+mthread_mutex_type_t	mthread_extra.h	36
+mthread_mutex_unlock	mthread_mutex.c	/^mthread_mutex_unlock (mthread_mutex_t * __mutex)$/
+mthread_mutexattr_s	mthread_extra.h	55
+mthread_mutexattr_t	mthread.h	21
+mthread_mutexattr_t	mthread.h	33
+mthread_once	mthread_once.c	/^mthread_once (mthread_once_t * __once_control, voi/
+mthread_once_t	mthread.h	44
+mthread_output_log	mthread_debug.c	29
+mthread_output_log_name	mthread_debug.c	28
+mthread_remove_first	mthread.c	/^struct mthread_s* mthread_remove_first(mthread_lis/
+mthread_s	mthread_internal.h	41
+mthread_self	mthread.c	/^mthread_self (void)$/
+mthread_sem_destroy	mthread_sem.c	/^mthread_sem_destroy (mthread_sem_t * sem)$/
+mthread_sem_getvalue	mthread_sem.c	/^mthread_sem_getvalue (mthread_sem_t * sem, int *sv/
+mthread_sem_init	mthread_sem.c	/^mthread_sem_init (mthread_sem_t * sem, unsigned in/
+mthread_sem_post	mthread_sem.c	/^mthread_sem_post (mthread_sem_t * sem)$/
+mthread_sem_s	mthread.h	47
+mthread_sem_t	mthread.h	53
+mthread_sem_trywait	mthread_sem.c	/^mthread_sem_trywait (mthread_sem_t * sem)$/
+mthread_sem_wait	mthread_sem.c	/^mthread_sem_wait (mthread_sem_t * sem)$/
+mthread_setspecific	mthread_key.c	/^mthread_setspecific (mthread_key_t __key, const vo/
+mthread_spinlock_lock	mthread_tst.c	/^void mthread_spinlock_lock(mthread_tst_t *atomic){/
+mthread_spinlock_unlock	mthread_tst.c	/^void mthread_spinlock_unlock(mthread_tst_t *atomic/
+mthread_start_thread	mthread.c	/^static void mthread_start_thread(void* arg){$/
+mthread_status_t	mthread_internal.h	39
+mthread_t	mthread.h	15
+mthread_test_and_set	mthread_tst.c	/^int mthread_test_and_set(mthread_tst_t *atomic){$/
+mthread_tst_t	mthread.h	9
+mthread_virtual_processor_t	mthread_internal.h	37
+mthread_work_take	mthread.c	/^static struct mthread_s* mthread_work_take(mthread/
+mthread_yield	mthread.c	/^void mthread_yield(){$/
+nb_thread	mthread.h	24
+next	mthread_internal.h	46
+normal_init_mutex	tests.c	17
+not_implemented	mthread_internal.h	/^#define not_implemented() __not_implemented(__FUNC/
+not_migrable	mthread_internal.h	48
+p	mthread_internal.h	36
+policy	mthread_extra.h	59
+prioceiling	mthread_extra.h	58
+protocol	mthread_extra.h	57
+rank	mthread_internal.h	33
+ready_list	mthread_internal.h	32
+res	mthread_internal.h	43
+resched	mthread_internal.h	35
+run_routine	tests.c	/^void *run_routine(void *arg){$/
+safe_malloc	mthread_debug.c	/^void *safe_malloc(size_t size){$/
+scounter	tests.c	15
+sem	tests.c	18
+stack	mthread_internal.h	50
+state	mthread_internal.h	34
+status	mthread_internal.h	47
+tests	Makefile	/^tests: $(OBJS)$/
+tst_mutex	mthread_tst.c	42
+type	mthread_extra.h	56
+uc	mthread_internal.h	42
+value	mthread.h	49
+virtual_processors	mthread.c	19
+vp	mthread_internal.h	49
